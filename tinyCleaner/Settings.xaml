@@ -1,0 +1,53 @@
+﻿<Controls:MetroWindow x:Class="tinyCleaner.Settings"
+                        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+                        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+                        xmlns:Controls="http://metro.mahapps.com/winfx/xaml/controls"
+                        xmlns:iconPacks="http://metro.mahapps.com/winfx/xaml/iconpacks"
+                        xmlns:local="clr-namespace:tinyCleaner"
+                        mc:Ignorable="d"
+                        WindowStartupLocation="CenterScreen"
+                        Title="Настройки" Height="300" Width="400" ResizeMode="NoResize" SizeToContent="WidthAndHeight">
+    <Border Margin="10">
+        <Grid Width="374">
+            <Grid.RowDefinitions>
+                <RowDefinition/>
+                <RowDefinition/>
+            </Grid.RowDefinitions>
+            <TextBlock TextWrapping="Wrap" Margin="0,0,1,106" FontSize="14">
+                tinyCleaner 1.0 (28.07.19)
+            </TextBlock>
+            <CheckBox HorizontalAlignment="Left" Margin="0,25,0,0" VerticalAlignment="Top" Width="374">
+                <TextBlock TextWrapping="Wrap" FontSize="12">
+                    Проверять обновления при запуске
+                </TextBlock>
+            </CheckBox>
+            <TextBlock TextWrapping="Wrap" Margin="0,87,0,5">
+                Пользуясь программой, вы соглашаетесь с приведенной дальше лицензией.
+            </TextBlock>
+            <RichTextBox VerticalScrollBarVisibility="Visible" IsReadOnly="True" HorizontalAlignment="Left" Height="125.5" Grid.Row="1" VerticalAlignment="Top" Width="374" FontFamily="Consolas">
+                <FlowDocument>
+                    <Paragraph>
+                        Copyright (c) 2019 nik9
+                        <LineBreak></LineBreak>
+                        <LineBreak></LineBreak>
+                        Данная лицензия разрешает лицам, получившим копию данного программного обеспечения и сопутствующей документации (в дальнейшем именуемыми «Программное Обеспечение»), безвозмездно использовать Программное Обеспечение без ограничений, включая неограниченное право на использование, копирование, изменение, слияние, публикацию, распространение, сублицензирование и/или продажу копий Программного Обеспечения, а также лицам, которым предоставляется данное Программное Обеспечение, при соблюдении следующих условий:
+                        <LineBreak></LineBreak>
+                        <LineBreak></LineBreak>
+                        Указанное выше уведомление об авторском праве и данные условия должны быть включены во все копии или значимые части данного Программного Обеспечения.
+                        <LineBreak></LineBreak>
+                        <LineBreak></LineBreak>
+                        ДАННОЕ ПРОГРАММНОЕ ОБЕСПЕЧЕНИЕ ПРЕДОСТАВЛЯЕТСЯ «КАК ЕСТЬ», БЕЗ КАКИХ-ЛИБО ГАРАНТИЙ, ЯВНО ВЫРАЖЕННЫХ ИЛИ ПОДРАЗУМЕВАЕМЫХ, ВКЛЮЧАЯ ГАРАНТИИ ТОВАРНОЙ ПРИГОДНОСТИ, СООТВЕТСТВИЯ ПО ЕГО КОНКРЕТНОМУ НАЗНАЧЕНИЮ И ОТСУТСТВИЯ НАРУШЕНИЙ, НО НЕ ОГРАНИЧИВАЯСЬ ИМИ. НИ В КАКОМ СЛУЧАЕ АВТОРЫ ИЛИ ПРАВООБЛАДАТЕЛИ НЕ НЕСУТ ОТВЕТСТВЕННОСТИ ПО КАКИМ-ЛИБО ИСКАМ, ЗА УЩЕРБ ИЛИ ПО ИНЫМ ТРЕБОВАНИЯМ, В ТОМ ЧИСЛЕ, ПРИ ДЕЙСТВИИ КОНТРАКТА, ДЕЛИКТЕ ИЛИ ИНОЙ СИТУАЦИИ, ВОЗНИКШИМ ИЗ-ЗА ИСПОЛЬЗОВАНИЯ ПРОГРАММНОГО ОБЕСПЕЧЕНИЯ ИЛИ ИНЫХ ДЕЙСТВИЙ С ПРОГРАММНЫМ ОБЕСПЕЧЕНИЕМ.
+                    </Paragraph>
+                </FlowDocument>
+            </RichTextBox>
+            <Button HorizontalAlignment="Left" Margin="0,48,0,0" VerticalAlignment="Top" Width="24" Height="24" Padding="0">
+                <iconPacks:PackIconMaterial Width="16" Height="16" Kind="Refresh" />
+            </Button>
+            <Button Click="OpenGithub" HorizontalAlignment="Left" Margin="29,48,0,0" VerticalAlignment="Top" Width="24" Height="24" Padding="0">
+                <iconPacks:PackIconMaterial Width="16" Height="16" Kind="GithubCircle" />
+            </Button>
+        </Grid>
+    </Border>
+</Controls:MetroWindow>
