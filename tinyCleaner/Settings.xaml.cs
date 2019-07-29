@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Globalization;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -26,6 +27,12 @@ namespace tinyCleaner
         public Settings()
         {
             InitializeComponent();
+
+            Version version = System.Reflection.Assembly.GetExecutingAssembly().GetName().Version;
+            DateTime buildDate = new DateTime(2000, 1, 1)
+                                    .AddDays(version.Build).AddSeconds(version.Revision * 2);
+
+            VersionText.Text = $"tinyCleaner {version} ({buildDate})";
         }
 
         private void OpenGithub(object sender, RoutedEventArgs e)

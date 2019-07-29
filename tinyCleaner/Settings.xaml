@@ -15,8 +15,8 @@
                 <RowDefinition/>
                 <RowDefinition/>
             </Grid.RowDefinitions>
-            <TextBlock TextWrapping="Wrap" Margin="0,0,1,106" FontSize="14">
-                tinyCleaner 1.0 (28.07.19)
+            <TextBlock Name="VersionText" TextWrapping="Wrap" Margin="0,0,1,106" FontSize="14">
+                
             </TextBlock>
             <CheckBox HorizontalAlignment="Left" Margin="0,25,0,0" VerticalAlignment="Top" Width="374">
                 <TextBlock TextWrapping="Wrap" FontSize="12">

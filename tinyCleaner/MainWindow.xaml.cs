@@ -113,7 +113,7 @@ namespace tinyCleaner
 
         private void ApplyDebloat(object sender, RoutedEventArgs e)
         {
-            Boolean NothingChecked = true;
+            bool NothingChecked = true;
 
             RegistryKey RegistryLM = RegistryKey.OpenBaseKey(RegistryHive.LocalMachine, RegistryView.Registry64);
             RegistryKey RegistryCU = RegistryKey.OpenBaseKey(RegistryHive.CurrentUser, RegistryView.Registry64);
