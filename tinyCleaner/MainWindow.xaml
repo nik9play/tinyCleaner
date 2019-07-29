@@ -41,8 +41,6 @@
                         <iconPacks:PackIconMaterial Width="24" Height="24" Kind="Check" />
                     </Button>
                     <CheckBox Content="Удалить из контекстного меню Paint 3D" HorizontalAlignment="Left" Margin="0,184,0,0" VerticalAlignment="Top" Width="474" Height="18"/>
-                    <Controls:ProgressRing Name="DebloatRing" Height="20" Width="20" Margin="-40,6.5,494,0.5" Visibility="Hidden" Grid.Row="1"/>
-                    <TextBlock Name="DebloatRingText" HorizontalAlignment="Left" Margin="35,17.701,0,-6.661" TextWrapping="Wrap" Text="Выполнение...." VerticalAlignment="Top" Width="436.623" Visibility="Hidden" Grid.Row="1" Height="15.96"/>
                     <CheckBox Name="DisableDVR" Content="Отключить Xbox DVR" HorizontalAlignment="Left" Margin="0,207,0,0" VerticalAlignment="Top" Width="474" Height="18"/>
 
                 </Grid>

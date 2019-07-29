@@ -113,8 +113,20 @@ namespace tinyCleaner
 
         private void ApplyDebloat(object sender, RoutedEventArgs e)
         {
+            Boolean NothingChecked = true;
+
             RegistryKey RegistryLM = RegistryKey.OpenBaseKey(RegistryHive.LocalMachine, RegistryView.Registry64);
             RegistryKey RegistryCU = RegistryKey.OpenBaseKey(RegistryHive.CurrentUser, RegistryView.Registry64);
+
+            foreach (var a in Debloat.Children)
+            {
+                if (a.GetType() == typeof(CheckBox))
+                    if (((CheckBox)a).IsChecked == true)
+                        NothingChecked = false;
+            }
+
+            if (NothingChecked == true)
+                this.ShowMessageAsync("tinyCleaner", "Вы не выбрали ни одной галочки.");
 
             foreach (var a in Debloat.Children)
             {
@@ -123,9 +135,6 @@ namespace tinyCleaner
                 if (a.GetType() == typeof(Button))
                     ((Button)a).IsEnabled = false;
             }
-
-            DebloatRing.Visibility = Visibility.Visible;
-            DebloatRingText.Visibility = Visibility.Visible;
 
             if (DisableWindowsDefender.IsChecked == true)
             {
@@ -329,8 +338,13 @@ namespace tinyCleaner
                 MessageBox.Show(test, "test");
             }
 
-            DebloatRing.Visibility = Visibility.Hidden;
-            DebloatRingText.Visibility = Visibility.Hidden;
+            foreach (var a in Debloat.Children)
+            {
+                if (a.GetType() == typeof(CheckBox))
+                    ((CheckBox)a).IsEnabled = true;
+                if (a.GetType() == typeof(Button))
+                    ((Button)a).IsEnabled = true;
+            }
         }
     }
 }
