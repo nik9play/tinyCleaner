@@ -5,6 +5,7 @@
                         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
                         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
                         xmlns:local="clr-namespace:tinyCleaner"
+                        xmlns:p="clr-namespace:tinyCleaner.Properties"
                         xmlns:iconPacks="http://metro.mahapps.com/winfx/xaml/iconpacks"
                         mc:Ignorable="d"
                         WindowStartupLocation="CenterScreen"
@@ -28,35 +29,33 @@
                         <RowDefinition Height="262"/>
                         <RowDefinition Height="50"/>
                     </Grid.RowDefinitions>
-                    <CheckBox Name="DisableWindowsDefender" Content="Удалить Windows Defender" HorizontalAlignment="Left" VerticalAlignment="Top" Width="474" Height="18"/>
-                    <CheckBox Name="DisableSettingsPrivacy" Content="Отключить всё в Параметрах конфиденциальности" ToolTip="Hui" HorizontalAlignment="Left" Margin="0,23,0,0" VerticalAlignment="Top" Width="474" Height="18"/>
-                    <CheckBox Name="DisableCortana" Content="Отключить Кортану" HorizontalAlignment="Left" Margin="0,46,0,0" VerticalAlignment="Top" Width="474" Height="18"/>
-                    <CheckBox Name="DisableErrorReport" Content="Отключить отправления отчетов об ошибках" HorizontalAlignment="Left" Margin="0,69,0,0" VerticalAlignment="Top" Width="474" Height="18"/>
-                    <CheckBox Name="DisableAutoUpdates" Content="Отключить автоматические обновления" HorizontalAlignment="Left" Margin="0,92,0,0" VerticalAlignment="Top" Width="474" Height="18"/>
-                    <CheckBox Name="DisableSync" Content="Отключить синхронизацию" HorizontalAlignment="Left" Margin="0,115,0,0" VerticalAlignment="Top" Width="474" Height="18"/>
-                    <CheckBox Name="DisableWindowsTips" Content="Отключить Windows Tips" HorizontalAlignment="Left" Margin="0,138,0,0" VerticalAlignment="Top" Width="474" Height="18"/>
-                    <CheckBox Name="DisableServices" Content="Отключить службы телеметрии и другие (в т.ч. SmartScreen)" HorizontalAlignment="Left" Margin="0,161,0,0" VerticalAlignment="Top" Width="474" Height="18"/>
-                    <Button HorizontalAlignment="Left" Margin="0,18,306,0" Click="CheckAll" Grid.Row="1" Content="Поставить все галочки"/>
+                    <CheckBox Name="DisableWindowsDefender" Content="{x:Static p:Resources.DisableWindowsDefender}" HorizontalAlignment="Left" VerticalAlignment="Top" Width="474" Height="18"/>
+                    <CheckBox Name="DisableSettingsPrivacy" Content="{x:Static p:Resources.DisableSettingsPrivacy}" ToolTip="Hui" HorizontalAlignment="Left" Margin="0,23,0,0" VerticalAlignment="Top" Width="474" Height="18"/>
+                    <CheckBox Name="DisableCortana" Content="{x:Static p:Resources.DisableCortana}" HorizontalAlignment="Left" Margin="0,46,0,0" VerticalAlignment="Top" Width="474" Height="18"/>
+                    <CheckBox Name="DisableErrorReport" Content="{x:Static p:Resources.DisableErrorReport}" HorizontalAlignment="Left" Margin="0,69,0,0" VerticalAlignment="Top" Width="474" Height="18"/>
+                    <CheckBox Name="DisableAutoUpdates" Content="{x:Static p:Resources.DisableAutoUpdates}" HorizontalAlignment="Left" Margin="0,92,0,0" VerticalAlignment="Top" Width="474" Height="18"/>
+                    <CheckBox Name="DisableSync" Content="{x:Static p:Resources.DisableSync}" HorizontalAlignment="Left" Margin="0,115,0,0" VerticalAlignment="Top" Width="474" Height="18"/>
+                    <CheckBox Name="DisableWindowsTips" Content="{x:Static p:Resources.DisableWindowsTips}" HorizontalAlignment="Left" Margin="0,138,0,0" VerticalAlignment="Top" Width="474" Height="18"/>
+                    <CheckBox Name="DisableServices" Content="{x:Static p:Resources.DisableServices}" HorizontalAlignment="Left" Margin="0,161,0,0" VerticalAlignment="Top" Width="474" Height="18"/>
+                    <Button HorizontalAlignment="Left" Margin="0,18,306,0" Click="CheckAll" Grid.Row="1" Content="{x:Static p:Resources.CheckAllBoxes}"/>
                     <Button Style="{DynamicResource MahApps.Metro.Styles.MetroCircleButtonStyle}" Click="ApplyDebloat" Background="#FF1E88C7" Margin="424,0,0,0" Grid.Row="1" Width="50">
                         <iconPacks:PackIconMaterial Width="24" Height="24" Kind="Check" />
                     </Button>
-                    <CheckBox Content="Удалить из контекстного меню Paint 3D" HorizontalAlignment="Left" Margin="0,184,0,0" VerticalAlignment="Top" Width="474" Height="18"/>
-                    <CheckBox Name="DisableDVR" Content="Отключить Xbox DVR" HorizontalAlignment="Left" Margin="0,207,0,0" VerticalAlignment="Top" Width="474" Height="18"/>
+                    <CheckBox Content="{x:Static p:Resources.RemovePaint3D}" HorizontalAlignment="Left" Margin="0,184,0,0" VerticalAlignment="Top" Width="474" Height="18"/>
+                    <CheckBox Name="DisableDVR" Content="{x:Static p:Resources.DisableDVR}" HorizontalAlignment="Left" Margin="0,207,0,0" VerticalAlignment="Top" Width="474" Height="18"/>
 
                 </Grid>
             </Border>
 
         </TabItem>
 
-        <TabItem Header="Очистка">
+        <TabItem Header="{x:Static p:Resources.CleanTabText}">
             <Border Margin="10">
                 <Grid Name="Clean">
                     <Grid.RowDefinitions>
-                        <RowDefinition Height="283"/>
-                        <RowDefinition Height="29"/>
+                        <RowDefinition Height="262"/>
+                        <RowDefinition Height="50"/>
                     </Grid.RowDefinitions>
-                    <Button Content="Поставить все галочки" HorizontalAlignment="Left" VerticalAlignment="Top" Width="168" Click="CheckAll" Grid.Row="1"/>
-                    <Button Content="Снять все галочки" HorizontalAlignment="Left" Margin="173,0,0,0" VerticalAlignment="Top" Width="137" Grid.Row="1" Click="UnCheckAll"/>
                     <CheckBox Content="Очистить корзину" HorizontalAlignment="Left" VerticalAlignment="Top" Width="474"/>
                     <CheckBox Content="Очистить все временные папки" HorizontalAlignment="Left" Margin="0,23,0,0" VerticalAlignment="Top" Width="474"/>
                     <CheckBox Content="Очистить WinSxS" HorizontalAlignment="Left" Margin="0,46,0,0" VerticalAlignment="Top" Width="474"/>
@@ -67,38 +66,30 @@
             </Border>
         </TabItem>
 
-        <TabItem Header="UWP приложения" HorizontalAlignment="Left" Height="39" VerticalAlignment="Top" Width="231" Margin="0,0,-126,0">
+        <TabItem Header="{x:Static p:Resources.UWOAppsTabText}" HorizontalAlignment="Left" Height="39" VerticalAlignment="Top" Width="231" Margin="0,0,-126,0">
             <Border Margin="10">
-                <Grid Name="UWP">
-                    <Grid.ColumnDefinitions>
-                        <ColumnDefinition Width="259*"/>
-                        <ColumnDefinition Width="260*"/>
-                    </Grid.ColumnDefinitions>
+                <Grid Name="UWP" Width="474">
                     <Grid.RowDefinitions>
-                        <RowDefinition Height="283"/>
-                        <RowDefinition Height="29"/>
+                        <RowDefinition/>
+                        <RowDefinition/>
+                        <RowDefinition/>
                     </Grid.RowDefinitions>
-                    <Controls:ProgressRing HorizontalAlignment="Stretch" Margin="5.001,125.661,200.999,126.339" VerticalAlignment="Stretch" Height="Auto" Width="Auto" Visibility="Hidden" Grid.Column="1"/>
-                    <Button Content="Поставить все галочки" HorizontalAlignment="Left" Margin="0,0,0,-0.3" VerticalAlignment="Top" Width="151" Height="27.3" Click="CheckAll" Grid.Row="1"/>
-                    <Button Content="Снять все галочки" HorizontalAlignment="Left" Margin="156,284.7,0,0" VerticalAlignment="Top" Width="123" Height="27.3" Click="UnCheckAll" Grid.ColumnSpan="2" Grid.RowSpan="2"/>
-                    <CheckBox Content="Удалить Microsoft Store" HorizontalAlignment="Left" VerticalAlignment="Top" Width="235.597" Height="18"/>
-                    <CheckBox Content="Удалить Музыка Groove" HorizontalAlignment="Left" Margin="0,23,0,0" VerticalAlignment="Top" Width="235.597" Height="18"/>
-                    <CheckBox Content="Удалить Кино и ТВ" HorizontalAlignment="Left" Margin="0,46,0,0" VerticalAlignment="Top" Width="235.597" Height="18"/>
-                    <CheckBox Content="Удалить все компоненты Xbox" HorizontalAlignment="Left" Margin="0,69,0,0" VerticalAlignment="Top" Width="235.597" Height="18"/>
-                    <CheckBox Content="Удалить Sticky Notes" HorizontalAlignment="Left" Margin="0,92,0,0" VerticalAlignment="Top" Width="235.597" Height="18"/>
-                    <CheckBox Content="Удалить Карты" HorizontalAlignment="Left" Margin="0,115,0,0" VerticalAlignment="Top" Width="235.597" Height="18"/>
-                    <CheckBox Content="Удалить Будильники и часы" HorizontalAlignment="Left" Margin="0,138,0,0" VerticalAlignment="Top" Width="235.597" Height="18"/>
-                    <CheckBox Content="Удалить Почта и Календарь" HorizontalAlignment="Left" Margin="0,161,0,0" VerticalAlignment="Top" Width="235.597" Height="18"/>
-                    <CheckBox Content="Удалить OneNote" HorizontalAlignment="Left" Margin="0,184,0,0" VerticalAlignment="Top" Width="235.597" Height="18"/>
-                    <CheckBox Content="Удалить Фотографии" HorizontalAlignment="Left" Margin="0,207,0,0" VerticalAlignment="Top" Width="235.597" Height="18"/>
-                    <CheckBox Content="Удалить Камера" HorizontalAlignment="Left" Margin="0,230,0,0" VerticalAlignment="Top" Width="235.597" Height="18"/>
-                    <CheckBox Content="Удалить Погода" HorizontalAlignment="Left" Margin="0,253,0,0" VerticalAlignment="Top" Width="236.543" Height="18"/>
-                    <CheckBox Content="Удалить Новости" HorizontalAlignment="Left" Margin="0,69,0,0" VerticalAlignment="Top" Width="237.457" Height="18" Grid.Column="1"/>
-                    <CheckBox Content="Удалить Запись голоса" HorizontalAlignment="Left" Margin="0,92,0,0" VerticalAlignment="Top" Width="237.457" Height="18" Grid.Column="1"/>
-                    <CheckBox Content="Отключить Edge" HorizontalAlignment="Left" Margin="0,115,0,0" VerticalAlignment="Top" Width="237.457" Height="18" Grid.Column="1"/>
-                    <CheckBox Content="Удалить Центр отзывов" HorizontalAlignment="Left" Margin="0,46,0,0" VerticalAlignment="Top" Width="237.457" Height="18" Grid.Column="1"/>
-                    <CheckBox Content="Удалить Быстрая помощь" HorizontalAlignment="Left" VerticalAlignment="Top" Width="237.457" Height="18" Grid.Column="1"/>
-                    <CheckBox Content="Удалить Ваш телефон" HorizontalAlignment="Left" Margin="0,23,0,0" VerticalAlignment="Top" Width="237.457" Height="18" Grid.Column="1"/>
+
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition/>
+                        <ColumnDefinition/>
+                        <ColumnDefinition/>
+                        <ColumnDefinition/>
+                        <ColumnDefinition/>
+                        <ColumnDefinition/>
+                    </Grid.ColumnDefinitions>
+                    <Image Grid.Column="0" Grid.Row="0" HorizontalAlignment="Left" VerticalAlignment="Top" Width="79" Source="Win10Icons/WindowsStoreIcon.png" />
+                    <TextBlock Grid.Column="0" Grid.Row="0" HorizontalAlignment="Left" Margin="0,79,0,0" TextWrapping="Wrap" Text="Microsoft Store Zalupa" VerticalAlignment="Bottom" Height="25" Width="79" TextAlignment="Center" FontSize="9.3"/>
+                    <Button Grid.Column="0" Grid.Row="0" HorizontalAlignment="Left" Margin="63,0,0,0" VerticalAlignment="Top" Width="16" Padding="0" Height="16">
+                        <iconPacks:PackIconMaterial Width="8" Height="8" Kind="Close" />
+                    </Button>
+
+                    <local:AppTile Grid.Column="1" Grid.Row="0" Text="Калькулятор"/>
                 </Grid>
             </Border>
         </TabItem>

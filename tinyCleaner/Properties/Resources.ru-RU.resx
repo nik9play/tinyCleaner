@@ -118,72 +118,72 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="CheckAllBoxes" xml:space="preserve">
-    <value>Check all</value>
+    <value>Поставить все галочки</value>
   </data>
   <data name="CheckUpdates" xml:space="preserve">
-    <value>Check updates on start</value>
+    <value>Проверять обновления при запуске</value>
   </data>
   <data name="CleanBrowserCache" xml:space="preserve">
-    <value>Clean browser cache</value>
+    <value>Очистить кэш браузеров</value>
   </data>
   <data name="CleanNVMOCache" xml:space="preserve">
-    <value>Clean NVIDIA and Microsoft Office Cache</value>
+    <value>Очистить кэш NVIDIA и Microsoft Office</value>
   </data>
   <data name="CleanTabText" xml:space="preserve">
-    <value>Clean</value>
+    <value>Очистка</value>
   </data>
   <data name="CleanTemp" xml:space="preserve">
-    <value>Clean Temp folders</value>
+    <value>Очистить временные папки</value>
   </data>
   <data name="CleanUpdateCache" xml:space="preserve">
-    <value>Clean Windows Update cache</value>
+    <value>Очистить кэш обновлений</value>
   </data>
   <data name="CleanWSxS" xml:space="preserve">
-    <value>Clean WinSxS</value>
+    <value>Очистить WinSxS</value>
   </data>
   <data name="DisableAutoUpdates" xml:space="preserve">
-    <value>Disable auto updates</value>
+    <value>Отключить автоматические  обновления</value>
   </data>
   <data name="DisableCortana" xml:space="preserve">
-    <value>Disable Cortana</value>
+    <value>Отключить Кортану</value>
   </data>
   <data name="DisableDVR" xml:space="preserve">
-    <value>Disable Xbox DVR</value>
+    <value>Отключить Xbox DVR</value>
   </data>
   <data name="DisableErrorReport" xml:space="preserve">
-    <value>Disable error reporting</value>
+    <value>Отключить отправление отчетов об ошибках</value>
   </data>
   <data name="DisableServices" xml:space="preserve">
-    <value>Disable telemetry and other unnecessary services</value>
+    <value>Отключить службы телеметрии и другие</value>
   </data>
   <data name="DisableSettingsPrivacy" xml:space="preserve">
-    <value>Disable everything in Privacy Settings</value>
+    <value>Отключить всё в Параметрах конфиденциальности</value>
   </data>
   <data name="DisableSync" xml:space="preserve">
-    <value>Disable Sync</value>
+    <value>Отключить синхронизацию</value>
   </data>
   <data name="DisableWindowsDefender" xml:space="preserve">
-    <value>Remove Windows Defender</value>
+    <value>Отключить Защитник Windows</value>
   </data>
   <data name="DisableWindowsTips" xml:space="preserve">
-    <value>Disable Windows Tips</value>
+    <value>Отключить Windows Tips</value>
   </data>
   <data name="EmptyRecycleBin" xml:space="preserve">
-    <value>Empty Recycle Bin</value>
+    <value>Очистить корзину</value>
   </data>
   <data name="RemovePaint3D" xml:space="preserve">
-    <value>Remove Paint 3D from context menu</value>
+    <value>Удалить из контекстного меню Paint 3D</value>
   </data>
   <data name="Settings" xml:space="preserve">
-    <value>Settings</value>
+    <value>Настройки</value>
   </data>
   <data name="UnCheckAllBoxes" xml:space="preserve">
-    <value>Uncheck all</value>
+    <value>Снять все галочки</value>
   </data>
   <data name="UseLicense" xml:space="preserve">
-    <value>By using this program, you agree to the following license.</value>
+    <value>Пользуясь программой, вы соглашаетесь с приведенной дальше лицензией.</value>
   </data>
   <data name="UWOAppsTabText" xml:space="preserve">
-    <value>UWP Apps</value>
+    <value>UWP приложения</value>
   </data>
 </root>

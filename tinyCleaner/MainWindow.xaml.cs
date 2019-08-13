@@ -41,8 +41,7 @@ namespace tinyCleaner
             var btn = (Button)sender;
             btn.Click -= CheckAll;
             btn.Click += UnCheckAll;
-            btn.Content = "Снять все галочки";
-            btn.Width = 137;
+            btn.Content = Properties.Resources.UnCheckAllBoxes;
             var GridParent = (Grid)btn.GetParentObject();
             switch (GridParent.Name)
             {
@@ -75,8 +74,7 @@ namespace tinyCleaner
             var btn = (Button)sender;
             btn.Click -= UnCheckAll;
             btn.Click += CheckAll;
-            btn.Content = "Поставить все галочки";
-            btn.Width = 168;
+            btn.Content = Properties.Resources.CheckAllBoxes;
             var GridParent = (Grid)btn.GetParentObject();
             switch (GridParent.Name)
             {

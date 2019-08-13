@@ -17,6 +17,8 @@ namespace tinyCleaner
     {
         protected override void OnStartup(StartupEventArgs e)
         {
+            System.Threading.Thread.CurrentThread.CurrentUICulture = new System.Globalization.CultureInfo("en");
+
             RegistryKey RegistryCU = RegistryKey.OpenBaseKey(RegistryHive.CurrentUser, RegistryView.Registry64);
             RegistryKey key = RegistryCU.OpenSubKey(@"Software\Microsoft\Windows\CurrentVersion\Themes\Personalize", true);
 

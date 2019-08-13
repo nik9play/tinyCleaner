@@ -29,16 +29,21 @@
             <RichTextBox VerticalScrollBarVisibility="Visible" IsReadOnly="True" HorizontalAlignment="Left" Height="125.5" Grid.Row="1" VerticalAlignment="Top" Width="374" FontFamily="Consolas">
                 <FlowDocument>
                     <Paragraph>
-                        Copyright (c) 2019 nik9
+                        This program is free software: you can redistribute it and/or modify
+                        it under the terms of the GNU General Public License as published by
+                        the Free Software Foundation, either version 3 of the License, or
+                        (at your option) any later version.
                         <LineBreak></LineBreak>
                         <LineBreak></LineBreak>
-                        Данная лицензия разрешает лицам, получившим копию данного программного обеспечения и сопутствующей документации (в дальнейшем именуемыми «Программное Обеспечение»), безвозмездно использовать Программное Обеспечение без ограничений, включая неограниченное право на использование, копирование, изменение, слияние, публикацию, распространение, сублицензирование и/или продажу копий Программного Обеспечения, а также лицам, которым предоставляется данное Программное Обеспечение, при соблюдении следующих условий:
+                        This program is distributed in the hope that it will be useful,
+                        but WITHOUT ANY WARRANTY; without even the implied warranty of
+                        MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+                        GNU General Public License for more details.
                         <LineBreak></LineBreak>
                         <LineBreak></LineBreak>
-                        Указанное выше уведомление об авторском праве и данные условия должны быть включены во все копии или значимые части данного Программного Обеспечения.
-                        <LineBreak></LineBreak>
-                        <LineBreak></LineBreak>
-                        ДАННОЕ ПРОГРАММНОЕ ОБЕСПЕЧЕНИЕ ПРЕДОСТАВЛЯЕТСЯ «КАК ЕСТЬ», БЕЗ КАКИХ-ЛИБО ГАРАНТИЙ, ЯВНО ВЫРАЖЕННЫХ ИЛИ ПОДРАЗУМЕВАЕМЫХ, ВКЛЮЧАЯ ГАРАНТИИ ТОВАРНОЙ ПРИГОДНОСТИ, СООТВЕТСТВИЯ ПО ЕГО КОНКРЕТНОМУ НАЗНАЧЕНИЮ И ОТСУТСТВИЯ НАРУШЕНИЙ, НО НЕ ОГРАНИЧИВАЯСЬ ИМИ. НИ В КАКОМ СЛУЧАЕ АВТОРЫ ИЛИ ПРАВООБЛАДАТЕЛИ НЕ НЕСУТ ОТВЕТСТВЕННОСТИ ПО КАКИМ-ЛИБО ИСКАМ, ЗА УЩЕРБ ИЛИ ПО ИНЫМ ТРЕБОВАНИЯМ, В ТОМ ЧИСЛЕ, ПРИ ДЕЙСТВИИ КОНТРАКТА, ДЕЛИКТЕ ИЛИ ИНОЙ СИТУАЦИИ, ВОЗНИКШИМ ИЗ-ЗА ИСПОЛЬЗОВАНИЯ ПРОГРАММНОГО ОБЕСПЕЧЕНИЯ ИЛИ ИНЫХ ДЕЙСТВИЙ С ПРОГРАММНЫМ ОБЕСПЕЧЕНИЕМ.
+                        You should have received a copy of the GNU General Public License
+                        along with this program.  If not,
+                        <Hyperlink NavigateUri="https://www.gnu.org/licenses/" RequestNavigate="Hyperlink_RequestNavigate">https://www.gnu.org/licenses/</Hyperlink>.
                     </Paragraph>
                 </FlowDocument>
             </RichTextBox>
