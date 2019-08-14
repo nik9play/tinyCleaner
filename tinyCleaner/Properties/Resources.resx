@@ -171,6 +171,9 @@
   <data name="EmptyRecycleBin" xml:space="preserve">
     <value>Empty Recycle Bin</value>
   </data>
+  <data name="OpenGH" xml:space="preserve">
+    <value>Open GitHub Repo</value>
+  </data>
   <data name="RemovePaint3D" xml:space="preserve">
     <value>Remove Paint 3D from context menu</value>
   </data>
@@ -179,6 +182,9 @@
   </data>
   <data name="UnCheckAllBoxes" xml:space="preserve">
     <value>Uncheck all</value>
+  </data>
+  <data name="UpdateNow" xml:space="preserve">
+    <value>Update Now</value>
   </data>
   <data name="UseLicense" xml:space="preserve">
     <value>By using this program, you agree to the following license.</value>

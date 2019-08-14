@@ -56,12 +56,12 @@
                         <RowDefinition Height="262"/>
                         <RowDefinition Height="50"/>
                     </Grid.RowDefinitions>
-                    <CheckBox Content="Очистить корзину" HorizontalAlignment="Left" VerticalAlignment="Top" Width="474"/>
-                    <CheckBox Content="Очистить все временные папки" HorizontalAlignment="Left" Margin="0,23,0,0" VerticalAlignment="Top" Width="474"/>
-                    <CheckBox Content="Очистить WinSxS" HorizontalAlignment="Left" Margin="0,46,0,0" VerticalAlignment="Top" Width="474"/>
-                    <CheckBox Content="Очистить кэша браузеров " HorizontalAlignment="Left" Margin="0,69,0,0" VerticalAlignment="Top" Width="474"/>
-                    <CheckBox Content="Очистить кэша NVIDIA и Microsoft Office" HorizontalAlignment="Left" Margin="0,92,0,0" VerticalAlignment="Top" Width="474"/>
-                    <CheckBox Content="Очистить кэша обновлений Windows" HorizontalAlignment="Left" Margin="0,115,0,0" VerticalAlignment="Top" Width="474"/>
+                    <CheckBox Content="{x:Static p:Resources.EmptyRecycleBin}" HorizontalAlignment="Left" VerticalAlignment="Top" Width="474"/>
+                    <CheckBox Content="{x:Static p:Resources.CleanTemp}" HorizontalAlignment="Left" Margin="0,23,0,0" VerticalAlignment="Top" Width="474"/>
+                    <CheckBox Content="{x:Static p:Resources.CleanWSxS}" HorizontalAlignment="Left" Margin="0,46,0,0" VerticalAlignment="Top" Width="474"/>
+                    <CheckBox Content="{x:Static p:Resources.CleanBrowserCache}" HorizontalAlignment="Left" Margin="0,69,0,0" VerticalAlignment="Top" Width="474"/>
+                    <CheckBox Content="{x:Static p:Resources.CleanNVMOCache}" HorizontalAlignment="Left" Margin="0,92,0,0" VerticalAlignment="Top" Width="474"/>
+                    <CheckBox Content="{x:Static p:Resources.CleanUpdateCache}" HorizontalAlignment="Left" Margin="0,115,0,0" VerticalAlignment="Top" Width="474"/>
                 </Grid>
             </Border>
         </TabItem>

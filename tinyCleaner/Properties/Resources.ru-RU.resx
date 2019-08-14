@@ -171,6 +171,9 @@
   <data name="EmptyRecycleBin" xml:space="preserve">
     <value>Очистить корзину</value>
   </data>
+  <data name="OpenGH" xml:space="preserve">
+    <value>Открыть GitHub</value>
+  </data>
   <data name="RemovePaint3D" xml:space="preserve">
     <value>Удалить из контекстного меню Paint 3D</value>
   </data>
@@ -179,6 +182,9 @@
   </data>
   <data name="UnCheckAllBoxes" xml:space="preserve">
     <value>Снять все галочки</value>
+  </data>
+  <data name="UpdateNow" xml:space="preserve">
+    <value>Обновить сейчас</value>
   </data>
   <data name="UseLicense" xml:space="preserve">
     <value>Пользуясь программой, вы соглашаетесь с приведенной дальше лицензией.</value>

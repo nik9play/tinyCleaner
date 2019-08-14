@@ -223,6 +223,15 @@ namespace tinyCleaner.Properties {
         }
         
         /// <summary>
+        ///   Ищет локализованную строку, похожую на Open GitHub Repo.
+        /// </summary>
+        public static string OpenGH {
+            get {
+                return ResourceManager.GetString("OpenGH", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Ищет локализованную строку, похожую на Remove Paint 3D from context menu.
         /// </summary>
         public static string RemovePaint3D {
@@ -246,6 +255,15 @@ namespace tinyCleaner.Properties {
         public static string UnCheckAllBoxes {
             get {
                 return ResourceManager.GetString("UnCheckAllBoxes", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на Update Now.
+        /// </summary>
+        public static string UpdateNow {
+            get {
+                return ResourceManager.GetString("UpdateNow", resourceCulture);
             }
         }
         
