@@ -43,7 +43,7 @@
                     </Button>
                     <CheckBox Content="{x:Static p:Resources.RemovePaint3D}" HorizontalAlignment="Left" Margin="0,184,0,0" VerticalAlignment="Top" Width="474" Height="18"/>
                     <CheckBox Name="DisableDVR" Content="{x:Static p:Resources.DisableDVR}" HorizontalAlignment="Left" Margin="0,207,0,0" VerticalAlignment="Top" Width="474" Height="18"/>
-
+                    
                 </Grid>
             </Border>
 
@@ -83,13 +83,7 @@
                         <ColumnDefinition/>
                         <ColumnDefinition/>
                     </Grid.ColumnDefinitions>
-                    <Image Grid.Column="0" Grid.Row="0" HorizontalAlignment="Left" VerticalAlignment="Top" Width="79" Source="Win10Icons/WindowsStoreIcon.png" />
-                    <TextBlock Grid.Column="0" Grid.Row="0" HorizontalAlignment="Left" Margin="0,79,0,0" TextWrapping="Wrap" Text="Microsoft Store Zalupa" VerticalAlignment="Bottom" Height="25" Width="79" TextAlignment="Center" FontSize="9.3"/>
-                    <Button Grid.Column="0" Grid.Row="0" HorizontalAlignment="Left" Margin="63,0,0,0" VerticalAlignment="Top" Width="16" Padding="0" Height="16">
-                        <iconPacks:PackIconMaterial Width="8" Height="8" Kind="Close" />
-                    </Button>
-
-                    <local:AppTile Grid.Column="1" Grid.Row="0" Text="Калькулятор"/>
+                    <local:AppTile Grid.Column="0" Grid.Row="0" Text="Калькулятор" PackageName="Microsoft.WindowsCalculator"/>
                 </Grid>
             </Border>
         </TabItem>

@@ -1,6 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Collections.ObjectModel;
 using System.Linq;
+using System.Management.Automation.Runspaces;
+using System.Management.Automation;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows;
@@ -12,6 +15,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using MahApps.Metro.IconPacks;
 
 namespace tinyCleaner
 {
@@ -25,9 +29,26 @@ namespace tinyCleaner
             InitializeComponent();
         }
 
-        private void Anal(object sender, RoutedEventArgs e)
+        PowerShell ps = PowerShell.Create();
+
+        private void AppTileWindow_Loaded(object sender, RoutedEventArgs e)
         {
-            MessageBox.Show(Text, "test");
+            Image.Source = new BitmapImage(new Uri(@"pack://application:,,,/tinyCleaner;component/Win10Icons/" + PackageName + ".png"));
+        }
+
+        private void ActionBtn(object sender, RoutedEventArgs e)
+        {
+            string hui = "";
+            ps.AddCommand("Get-AppxPackage").AddParameter("AllUsers").AddArgument(PackageName).AddCommand("Remove-AppxPackage");
+
+            foreach (PSObject result in ps.Invoke())
+            {
+                hui += result;
+            }
+
+            if (hui == "")
+                Icon.Kind =  PackIconMaterialKind.ArrowCollapseDown;
+
         }
 
         //register Text
@@ -39,5 +60,14 @@ namespace tinyCleaner
 
         public static readonly DependencyProperty TextProperty =
             DependencyProperty.Register("Text", typeof(string), typeof(AppTile), new PropertyMetadata("Untitled"));
+
+        public string PackageName
+        {
+            get { return (string)GetValue(PackageNameProperty); }
+            set { SetValue(PackageNameProperty, value); }
+        }
+
+        public static readonly DependencyProperty PackageNameProperty =
+            DependencyProperty.Register("PackageName", typeof(string), typeof(AppTile), new PropertyMetadata("None"));
     }
 }

@@ -186,9 +186,6 @@
   <data name="UpdateNow" xml:space="preserve">
     <value>Обновить сейчас</value>
   </data>
-  <data name="UseLicense" xml:space="preserve">
-    <value>Пользуясь программой, вы соглашаетесь с приведенной дальше лицензией.</value>
-  </data>
   <data name="UWOAppsTabText" xml:space="preserve">
     <value>UWP приложения</value>
   </data>

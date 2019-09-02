@@ -7,12 +7,13 @@
              mc:Ignorable="d" 
              Name="AppTileWindow"
              xmlns:iconPacks="http://metro.mahapps.com/winfx/xaml/iconpacks"
+             Loaded="AppTileWindow_Loaded"
              d:DesignHeight="450" d:DesignWidth="800" Width="79" Height="104">
     <Grid>
-        <Image HorizontalAlignment="Left" VerticalAlignment="Top" Width="79" Source="Win10Icons/WindowsStoreIcon.png" />
+        <Image Name="Image" HorizontalAlignment="Left" VerticalAlignment="Top" Width="79" Source="Win10Icons/Microsoft.WindowsCalculator.png"/>
         <TextBlock HorizontalAlignment="Left" Margin="0,79,0,0" TextWrapping="Wrap" Text="{Binding Text, ElementName=AppTileWindow}" VerticalAlignment="Bottom" Height="25" Width="79" TextAlignment="Center" FontSize="9.3"/>
-        <Button Click="Anal" HorizontalAlignment="Left" Margin="63,0,0,0" VerticalAlignment="Top" Width="16" Padding="0" Height="16">
-            <iconPacks:PackIconMaterial Width="8" Height="8" Kind="Close" />
+        <Button Click="ActionBtn" HorizontalAlignment="Left" Margin="63,0,0,0" VerticalAlignment="Top" Width="16" Padding="0" Height="16">
+            <iconPacks:PackIconMaterial Name="Icon" Width="8" Height="8" Kind="Close"/>
         </Button>
     </Grid>
 </UserControl>

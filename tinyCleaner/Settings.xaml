@@ -17,13 +17,12 @@
                 <RowDefinition/>
             </Grid.RowDefinitions>
             <TextBlock Name="VersionText" TextWrapping="Wrap" Margin="0,0,1,106" FontSize="14">
-                
+
             </TextBlock>
             <CheckBox HorizontalAlignment="Left" Margin="0,25,0,0" VerticalAlignment="Top" Width="374">
                 <TextBlock TextWrapping="Wrap" FontSize="12" Text="{x:Static p:Resources.CheckUpdates}"/>
             </CheckBox>
-            <TextBlock TextWrapping="Wrap" Margin="0,87,0,5" Text="{x:Static p:Resources.UseLicense}"/>
-            <RichTextBox VerticalScrollBarVisibility="Visible" IsReadOnly="True" HorizontalAlignment="Left" Height="125.5" Grid.Row="1" VerticalAlignment="Top" Width="374" FontFamily="Consolas">
+            <RichTextBox VerticalScrollBarVisibility="Visible" IsReadOnly="True" HorizontalAlignment="Left" VerticalAlignment="Top" Width="374" FontFamily="Consolas" Height="174" Margin="0,77,0,0" Grid.RowSpan="2">
                 <FlowDocument>
                     <Paragraph>
                         This program is free software: you can redistribute it and/or modify
@@ -40,7 +39,7 @@
                         <LineBreak></LineBreak>
                         You should have received a copy of the GNU General Public License
                         along with this program.  If not,
-                        <Hyperlink NavigateUri="https://www.gnu.org/licenses/" RequestNavigate="Hyperlink_RequestNavigate">https://www.gnu.org/licenses/</Hyperlink>.
+                        <Hyperlink NavigateUri="https://www.gnu.org/licenses/" RequestNavigate="Hyperlink_RequestNavigate">https://www.gnu.org/licenses/</Hyperlink> .
                     </Paragraph>
                 </FlowDocument>
             </RichTextBox>

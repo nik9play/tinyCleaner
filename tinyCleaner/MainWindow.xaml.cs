@@ -324,16 +324,24 @@ namespace tinyCleaner
 
             if (DisableServices.IsChecked == true)
             {
-                Process process = new Process();
-                ProcessStartInfo startInfo = new ProcessStartInfo();
-                startInfo.WindowStyle = ProcessWindowStyle.Hidden;
-                startInfo.FileName = "cmd.exe";
-                startInfo.Arguments = "/C ipconfig.exe";
-                process.StartInfo = startInfo;
-                process.Start();
-                var test = process.StandardOutput.ReadToEnd();
-                process.WaitForExit();
-                MessageBox.Show(test, "test");
+                var proc = new Process
+                {
+                    StartInfo = new ProcessStartInfo
+                    {
+                        FileName = "Get-AppxPackage",
+                        Arguments = "",
+                        UseShellExecute = false,
+                        RedirectStandardOutput = true,
+                        CreateNoWindow = true
+                    }
+                };
+
+                proc.Start();
+                while (!proc.StandardOutput.EndOfStream)
+                {
+                    string line = proc.StandardOutput.ReadLine();
+                    MessageBox.Show(line, "test");
+                }
             }
 
             foreach (var a in Debloat.Children)

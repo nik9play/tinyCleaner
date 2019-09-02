@@ -268,15 +268,6 @@ namespace tinyCleaner.Properties {
         }
         
         /// <summary>
-        ///   Ищет локализованную строку, похожую на By using this program, you agree to the following license..
-        /// </summary>
-        public static string UseLicense {
-            get {
-                return ResourceManager.GetString("UseLicense", resourceCulture);
-            }
-        }
-        
-        /// <summary>
         ///   Ищет локализованную строку, похожую на UWP Apps.
         /// </summary>
         public static string UWOAppsTabText {
